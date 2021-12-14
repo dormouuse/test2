@@ -1,0 +1,192 @@
+html {
+  min-width: 860px;
+}
+
+body,
+nav,
+header,
+footer,
+section,
+div,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Georgia, serif;
+  font-size: 20px;
+}
+
+.full {
+  background-image: url('./3.jpg');
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  height: 75px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  height: 400px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.o {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.info {
+  position: relative;
+  display: block;
+  text-align: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+.op {
+  cursor: pointer;
+  /*При наведенні курсора на бокс курсор змінюється на руку*/
+  border-radius: 20px;
+  /*заокруглює кути зовнішнього краю межі елемента*/
+  border: 1px solid black;
+  /**/
+  margin: 0 auto;
+  /*margin CSS встановлює область поля з усіх чотирьох сторін елемента*/
+  width: 10%;
+  font-size: 20px;
+}
+
+.greybox {
+
+  margin: 70px 100px;
+
+  display: flex;
+  /* використання flexbox, це призводить до того, що елемент <section> стає flexbox, а його елементи перетворюються на flex-елементи.*/
+  flex-direction: column;
+  /* у якому напрямку розташовані дочірні елементи flexbox, рощміщення в колонку */
+  justify-content: space-between;
+  /* "justify-content" контролює розташування елементів flex на головній осі, "space-between" він не залишає жодного простору на обох кінцях,рощміщення по краям */
+}
+
+p {
+  display: flex;
+  margin-bottom: 75px;
+  /*поле навколо рамки відступ знизу*/
+  /*поле навколо рамки відступ зверху*/
+  flex-direction: column;
+  /*у якому напрямку розташовані дочірні елементи flexbox*/
+  align-items: center;
+  line-height: 2.5;
+  /*встановлює висоту рядка*/
+}
+
+.over {
+  color: black;
+  margin: 10px;
+  /*margin CSS встановлює область поля з усіх чотирьох сторін елемента*/
+  text-align: center;
+  /*розміщення тексту*/
+  font-size: 30px;
+}
+
+.overview {
+  color: black;
+  /*колір*/
+  text-align: center;
+  /*розміщення тексту*/
+  width: 80%;
+  font-size: 20px;
+}
+
+div.two {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+div.orangebox {
+  display: flex;
+  width: 48%;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.orangebox2 {
+  display: flex;
+  /*Висота*/
+  width: 48%;
+  /*Ширина*/
+  flex-direction: column;
+  align-items: center;
+}
+
+.orangetitle {
+  color: black;
+  margin: 10px;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+}
+
+.orangetext {
+  color: black;
+  margin: 10px 0;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.darkgreybox {
+  display: flex;
+  height: 40px;
+  /*Висота*/
+  background-color: #E6DDC6;
+  /*Колір фону*/
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+footer {
+  display: flex;
+  height: 100px;
+  background-color: #C2B8A3;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+@media (max-width: 860px) {
+  .two {
+    flex-direction: column;
+    margin: 0 0 80px;
+  }
+
+  /*margin - встановлюю відстань полів для елемента (0 - для верхнього, 0 - для правого і лівого, 80 рх - для нижнього); flex-direction - Визначає напрямок гнучких елементів (column - Гнучкі елементи відображаються вертикально у вигляді стовпця);*/
+  .orangebox {
+    margin-bottom: 60px;
+    margin-right: 0;
+  }
+
+  /*margin-right - Встановлює відстань правого поля елемента (0); margin-bottom - Встановлює відстань нижнього поля елемента (60 рх)*/
+  .orangebox2 {
+    margin-left: 0;
+  }
+
+  /*margin-left - Встановлює відстань лівого поля елемента (0)*/
+}
